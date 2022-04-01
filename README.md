@@ -1,6 +1,6 @@
 # Debiasing Irrelevant Words in Natural Language Processing
 
-This is an A-scored course project of *Artificial Intelligence: Principles and Technique* course in IIIS, Tsinghua University taught by [Chongjie Zhang](http://group.iiis.tsinghua.edu.cn/~milab/person-zhangchongjie.html). I will briefly introduce our work in the following texts. 
+This is an A-scored course project of *Artificial Intelligence: Principles and Technique* course in IIIS, Tsinghua University taught by [Prof. Chongjie Zhang](http://group.iiis.tsinghua.edu.cn/~milab/person-zhangchongjie.html). I will briefly introduce our work in the following texts. 
 
 ## Introduction
 
