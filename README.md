@@ -50,8 +50,10 @@ As shown above, in the new model, the effect of our selected neutral words on th
 
 [6] VICTOR V, DHANYA S, DAVID B. Using Text Embeddings for Causal Inference[J/OL]. CoRR, 2019, abs/1905.12741. arXiv:1905.12741. http://arxiv.org/abs/1905.12741.
 
-## Poster Address
+## Poster and Technical Report
 
-[**Download PDF**](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/poster.pdf) (Please wait for a few seconds)
+[**Download Poster**](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/poster.pdf) (Please wait for a few seconds)
+
+[**Download Technical Report**](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/report.pdf) (Please wait for a few seconds)
 
 [**BibTex**](https://raw.githubusercontent.com/fengtony686/Irrelevant_Word_Debiasing/main/addtional%20documents/Irrelevant_Word_Debiasing.bib)
