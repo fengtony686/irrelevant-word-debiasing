@@ -6,7 +6,7 @@ This is an A-scored course project of *Artificial Intelligence: Principles and T
 
 There are two ways to implement AI, one is to translate the knowledge we have directly into an algorithm, and the other is to use a model with learning capabilities using a selected dataset to allow the machine to learn the knowledge on its own. For natural language processing problems, the latter is the popular way of implementation. However, to get a good model trained on a dataset, it is necessary to make the selected dataset as close to the actual problem as possible, or in the wild. However, as we see in the image below, machine learning models can be misled by the imbalance of the dataset (and indeed humans can make similar mistakes).
 
-![intro.png](https://p.sda1.dev/0/ee39265071af1821e6146f7d68e8c75b/intro.png)
+![intro.png](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/images/example.png)
 
 Methods have been proposed to remove the misleading effect of writing style and the number of sentence occurrences on the model. Our work focuses on the ways in which the presence or absence of certain neutral words can affect the model's predictions, and how to remove this effect (sometimes misleading).
 
