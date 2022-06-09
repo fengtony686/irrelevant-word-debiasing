@@ -20,7 +20,7 @@ Also, it is natural that the label is independent of our sampling strategy (in o
 
 According to the assumptions we proposed, there are six variables in total. In the original distribution, we have variables $X,Y$ that $Y$ is determined by $X$. The sampling intention variable $I$ is completely determined by sampling strategy $S$ according to $P(I\mid S)=P(I\mid S,X,Y)$. Suppose in the biased distribution $\overline{\mathcal{A}}$, $X,Y$ are transformed into $\overline{X},\overline{Y}$. Therefore, $\overline{X}$ is determined by $I$ and $X$ while $\overline{Y}$ is determined by $Y$. In our problem, the sampling strategy is related to some virtual words (i.e. the reviewer is used to using 'this' when giving positive reviews), therefore, $S$ is determined by $X$. According to these analyses, the final causal diagram is shown in the figure below. The dataset we see fits the distribution of variables in the red box. The bias of the dataset comes from the green path $X\rightarrow S\rightarrow I\rightarrow \overline{X}$, which changes the distribution of $X$, so that the relationship between $\overline{X}$ and $\overline{Y}$ is not exactly the same as the relationship between $X$ and $Y$.
 
-![causal_diagram.png](https://p.sda1.dev/0/b190358f52e83a85aabf05a320c1bbb1/causal_diagram.png)
+![causal_diagram.png](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/images/causal_diagram.png)
 
 Further, we assume that the relationship between $X$ and $Y$ in nature is $Y=f(X)$, and we want to fit $f$ with a machine learning model $f'$. Moreover, the sampling strategy $S$ is determined by a part of $X$ which is shaped as $[word\in sentence]$ in our problem and is denoted as $X''$. All we have to do is to extract $X''$ and use some method (we chose random forest) to estimate the relationship between sampling strategy and sampling intention.
 
@@ -28,11 +28,11 @@ See the poster (address at the end of the article) for the specific weights assi
 
 ## More Experimental Results
 
-![f1-score](https://p.sda1.dev/0/e899fd370eb4ac2f95c08ffe722fda87/F1-score.png)
+![f1-score](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/images/f1-score_comparison.png)
 
 The above image shows the F1 scores of the two models before and after the debiasing on the three datasets, and we can see that the model after the debiasing clearly performs better, which indicates that the debiased model generalizes better. However, this is not enough to show that we have successfully removed the model bias caused by the presence or absence of neutral words, so we have completed another experiment. This experiment looked at the change in model prediction by replacing neutral words with unit vectors from word2vec. Admittedly, this setting introduces structural changes to the sentences, but we argue here that the effect on sentence structure is negligible for sentiment analysis tasks.
 
-![comparison](https://p.sda1.dev/0/946501390c4ce0b7d69dcc00e33eb06d/difference_comparison.png)
+![comparison](https://github.com/fengtony686/Irrelevant_Word_Debiasing/blob/main/addtional%20documents/images/difference_comparison.png)
 
 As shown above, in the new model, the effect of our selected neutral words on the model is somewhat reduced.
 
